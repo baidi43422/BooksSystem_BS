@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="MallSystem"
+  id="myeclipse.1459308784763"
+  context-root="/MallSystem"
+  j2ee-spec="5.0"
+  archive="MallSystem.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>注册</title>
+	<script type="text/javascript">
+	window.onload=function(){
+		var id=document.getElementById("bID");
+		var date=new Date();
+		var val=""+date.getDate()+date.getHours()+date.getMinutes()+date.getSeconds();
+		id.setAttribute("value",val);
+	}
+	function checkIt(){
+		var pwd1=document.getElementById("pwd1");
+		var pwd2=document.getElementById("pwd2");
+		if(pwd1.value==pwd2.value){
+			return true;
+		}else{
+			alert("密码不一致");
+			return false;
+		}
+	}	
+	</script>
+	<style>
+		#div1{
+			width:400px;
+			height:800px;
+			background-color:#CCC;
+			margin:auto;
+		}
+		textarea{
+			width:200px;
+			height:100px;
+		}
+		#tds{
+			width:250px;
+			height:35px;
+			background-color:#666;
+			font-size:18px;
+			color:#FFF;
+			border:none;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="div1">
+        <form  action="AddControllerServlet" method="post" onsubmit="return checkIt()">
+        	<input type="hidden" name="bID" id="bID" />
+            <table>
+                <tr>
+                    <td>用户名:</td>
+                    <td><input type="text" name="userName"/></td>
+                </tr>
+                 <tr>
+                	<td>
+                    	<br />
+                    </td>
+                    <td>
+                    	<br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>密码:</td>
+                    <td><input type="password" name="pwd" id="pwd1"/> </td>
+                </tr>
+                 <tr>
+                	<td>
+                    	<br />
+                    </td>
+                    <td>
+                    	<br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>确认密码:</td>
+                    <td><input type="password" id="pwd2"/> </td>
+                </tr>
+                 <tr>
+                	<td>
+                    	<br />
+                    </td>
+                    <td>
+                    	<br />
+                   	</td>
+                    </tr>
+                <tr>
+                	<td>性别:</td>
+                    <td><input type="radio" value="man" name="rad" checked="checked"/>man
+                    	<input type="radio" value="woman" name="rad"/>woman
+                    </td>
+                </tr>
+                <tr>
+                	<td></td>
+                	<td><input type="submit" value="提交" id="tds"/></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
