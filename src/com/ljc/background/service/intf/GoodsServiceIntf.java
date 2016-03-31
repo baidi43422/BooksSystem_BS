@@ -9,4 +9,5 @@ public interface GoodsServiceIntf {
 	public boolean updateGoods(Goods goods);
 	public PageBean<Goods> query(PageBean<Goods> pageBean,Goods goods);
 	public int getCounts(Goods goods);
+	public Goods getGoods(Goods goods);
 }

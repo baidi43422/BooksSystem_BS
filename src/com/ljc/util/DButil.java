@@ -105,6 +105,53 @@ public class DButil {
 		}
 		return i;
 	}
+	public static int addGoods(String sql,String id,String name,String type_id,
+			double price,int amount,String remark,String small_pic,
+			String big_pic
+		){
+		int i=0;
+		try {
+			psta=con.prepareStatement(sql);
+			psta.setString(1, id);
+			psta.setString(2, name);
+			psta.setString(3, type_id);
+			psta.setDouble(4, price);
+			psta.setInt(5, amount);
+			psta.setString(6, remark);
+			psta.setString(7, small_pic);
+			psta.setString(8, big_pic);
+			i=psta.executeUpdate();
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			System.out.println(e.getMessage());
+		}
+		return i;
+	}
+	public static int updateGoods(String sql,String id,String name,String type_id,
+			double price,int amount,String remark,String small_pic,
+			String big_pic,String id1
+		){
+		int i=0;
+		try {
+			psta=con.prepareStatement(sql);
+			psta.setString(1, id);
+			psta.setString(2, name);
+			psta.setString(3, type_id);
+			psta.setDouble(4, price);
+			psta.setInt(5, amount);
+			psta.setString(6, remark);
+			psta.setString(7, small_pic);
+			psta.setString(8, big_pic);
+			psta.setString(9, id1);
+			i=psta.executeUpdate();
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			System.out.println(e.getMessage());
+		}
+		return i;
+	}
 		public static int updateBook(String sql,String name,double price,int count,String publish,String type_name,String id){
 			int i=0;
 			try {
@@ -145,6 +192,66 @@ public class DButil {
 			psta.setString(1, s1);
 			psta.setString(2, s2);
 			psta.setString(3, s3);
+			rs=psta.executeQuery();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return rs;
+	}
+	
+	public static ResultSet findGoods(String sql,String s1,String s2,double s3){
+		try {
+			psta=con.prepareStatement(sql);
+			psta.setString(1, s1);
+			psta.setString(2, s2);
+			psta.setDouble(3, s3);
+			rs=psta.executeQuery();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return rs;
+	}
+	public static ResultSet findGoods(String sql,String s1,String s2,double s3,int a,int b){
+		try {
+			psta=con.prepareStatement(sql);
+			psta.setString(1, s1);
+			psta.setString(2, s2);
+			psta.setDouble(3, s3);
+			psta.setInt(4, a);
+			psta.setInt(5, b);
+			rs=psta.executeQuery();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return rs;
+	}
+	public static ResultSet findGoods(String sql,String s1,String s2,double s3,double s4){
+		try {
+			psta=con.prepareStatement(sql);
+			psta.setString(1, s1);
+			psta.setString(2, s2);
+			psta.setDouble(3, s3);
+			psta.setDouble(4, s4);
+			
+			rs=psta.executeQuery();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return rs;
+	}
+	public static ResultSet findGoods(String sql,String s1,String s2,double s3,double s4,int a,int b){
+		try {
+			psta=con.prepareStatement(sql);
+			psta.setString(1, s1);
+			psta.setString(2, s2);
+			psta.setDouble(3, s3);
+			psta.setDouble(4, s4);
+			psta.setInt(5, a);
+			psta.setInt(6, b);
 			rs=psta.executeQuery();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -214,11 +321,50 @@ public class DButil {
 		rs=psta.executeQuery();
 		return rs;
 	}
+	public static ResultSet loginFind(String sql,String s1,String s2,int a,int b) throws SQLException{
+		psta=con.prepareStatement(sql);
+		psta.setString(1, s1);
+		psta.setString(2,s2);
+		psta.setInt(3, a);
+		psta.setInt(4, b);
+		rs=psta.executeQuery();
+		return rs;
+	}
 	//使用prepareStatement实现增删改查
 	public static ResultSet getSet1(String sql,String s){
 		try {
 			psta=con.prepareStatement(sql);
 			psta.setString(1, s);
+			rs=psta.executeQuery();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return rs;
+	}
+	public static ResultSet getSet1(String sql,String s,String s1,String s2,String s3){
+		try {
+			psta=con.prepareStatement(sql);
+			psta.setString(1, s);
+			psta.setString(2, s1);
+			psta.setString(3, s2);
+			psta.setString(4, s3);
+			rs=psta.executeQuery();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return rs;
+	}
+	public static ResultSet getSet1(String sql,String s,String s1,String s2,String s3,int a,int b){
+		try {
+			psta=con.prepareStatement(sql);
+			psta.setString(1, s);
+			psta.setString(2, s1);
+			psta.setString(3, s2);
+			psta.setString(4, s3);
+			psta.setInt(5, a);
+			psta.setInt(6, b);
 			rs=psta.executeQuery();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block

@@ -8,6 +8,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.ljc.background.model.GoodsType;
+import com.ljc.background.service.impl.GoodsTypeServiceImpl;
+import com.ljc.background.service.intf.GoodsTypeServiceIntf;
+
 public class DeletGoodsTypeServlet extends HttpServlet {
 
 	/**
@@ -66,19 +70,19 @@ public class DeletGoodsTypeServlet extends HttpServlet {
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
-		response.setContentType("text/html");
+		response.setContentType("text/html;charset=utf-8");
+		request.setCharacterEncoding("utf-8");
 		PrintWriter out = response.getWriter();
-		out.println("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">");
-		out.println("<HTML>");
-		out.println("  <HEAD><TITLE>A Servlet</TITLE></HEAD>");
-		out.println("  <BODY>");
-		out.print("    This is ");
-		out.print(this.getClass());
-		out.println(", using the POST method");
-		out.println("  </BODY>");
-		out.println("</HTML>");
-		out.flush();
-		out.close();
+		String id=request.getParameter("tID");
+		GoodsType goodsType=new GoodsType();
+		goodsType.setId(id);
+		GoodsTypeServiceIntf intf=new GoodsTypeServiceImpl();
+		boolean temp=intf.dele(goodsType);
+		if(temp){
+			System.out.println("É¾³ý³É¹¦£¡");
+		}else{
+			System.out.println("É¾³ýÊ§°Ü£¡");
+		}
 	}
 
 	/**

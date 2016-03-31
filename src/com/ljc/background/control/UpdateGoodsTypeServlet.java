@@ -9,6 +9,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.ljc.background.model.GoodsType;
+import com.ljc.background.service.impl.GoodsTypeServiceImpl;
+import com.ljc.background.service.intf.GoodsTypeServiceIntf;
 
 public class UpdateGoodsTypeServlet extends HttpServlet {
 
@@ -69,12 +71,19 @@ public class UpdateGoodsTypeServlet extends HttpServlet {
 			throws ServletException, IOException {
 
 		response.setContentType("text/html;charset=utf-8");
+		request.setCharacterEncoding("utf-8");
 		PrintWriter out = response.getWriter();
 		String id=request.getParameter("tID");
 		String name=request.getParameter("tName");
 		String p_id=request.getParameter("pID");
 		GoodsType goodsType = new GoodsType(id, name, p_id);
-		
+		GoodsTypeServiceIntf intf=new GoodsTypeServiceImpl();
+		boolean temp=intf.update(goodsType);
+		if(temp){
+			System.out.println("更新成功！");
+		}else{
+			System.out.println("更新失败！");
+		}
 	}
 
 	/**

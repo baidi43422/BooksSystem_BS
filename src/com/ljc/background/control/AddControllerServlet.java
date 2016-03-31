@@ -72,6 +72,7 @@ public class AddControllerServlet extends HttpServlet {
 			throws ServletException, IOException {
 
 		response.setContentType("text/html;charset=utf-8");
+		request.setCharacterEncoding("utf-8");
 		PrintWriter out = response.getWriter();
 		String id=request.getParameter("bID");
 		String name=request.getParameter("userName");

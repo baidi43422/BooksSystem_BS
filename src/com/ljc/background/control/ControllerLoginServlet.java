@@ -73,6 +73,7 @@ public class ControllerLoginServlet extends HttpServlet {
 			throws ServletException, IOException {
 
 		response.setContentType("text/html;charset=utf-8");
+		request.setCharacterEncoding("utf-8");
 		PrintWriter out = response.getWriter();
 		String name=request.getParameter("username");
 		String pwd=request.getParameter("password");

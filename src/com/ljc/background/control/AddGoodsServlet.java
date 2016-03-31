@@ -1,12 +1,27 @@
 package com.ljc.background.control;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
+import java.util.UUID;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import org.apache.commons.fileupload.DiskFileUpload;
+import org.apache.commons.fileupload.FileItem;
+import org.apache.commons.fileupload.FileItemFactory;
+import org.apache.commons.fileupload.FileUploadException;
+import org.apache.commons.fileupload.disk.DiskFileItemFactory;
+import org.apache.commons.fileupload.servlet.ServletFileUpload;
+
+import com.ljc.background.model.Goods;
+import com.ljc.background.service.impl.GoodsServiceImpl;
+import com.ljc.background.service.intf.GoodsServiceIntf;
+import com.ljc.util.GoodsAddAndUpdate;
 
 public class AddGoodsServlet extends HttpServlet {
 
@@ -63,12 +78,19 @@ public class AddGoodsServlet extends HttpServlet {
 	 * @throws ServletException if an error occurred
 	 * @throws IOException if an error occurred
 	 */
+
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
-		response.setContentType("text/html");
+		response.setContentType("text/html;charset=utf-8");
+		request.setCharacterEncoding("utf-8");
 		PrintWriter out = response.getWriter();
-		
+		boolean temp = GoodsAddAndUpdate.util(request,"add");
+		if(temp){
+			System.out.println("添加成功！");
+		}else{
+			System.out.println("添加失败！");
+		}
 	}
 
 	/**

@@ -28,11 +28,17 @@ public class User {
 		this.street = street;
 		this.phone = phone;
 	}
-	
 	public User() {
 		// TODO Auto-generated constructor stub
 	}
-
+	
+	public User(String id, String name, String status, String province) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.status = status;
+		this.province = province;
+	}
 	public String getId() {
 		return id;
 	}
