@@ -12,7 +12,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Properties;
 /*
- Á¬½ÓÊı¾İ¿â°æ±¾3
+ è¿æ¥æ•°æ®åº“ç‰ˆæœ¬3
 
 */
 public class DButil {
@@ -43,13 +43,13 @@ public class DButil {
 	}
 	private static void getPro(){
 		try {
-			//ÓëÊôĞÔÎÄ¼ş½¨Á¢Á¬½Ó
+			//ä¸å±æ€§æ–‡ä»¶å»ºç«‹è¿æ¥
 			fis=new FileInputStream("../webapps/MallSystem/WEB-INF/classes/MySqlJDBC.properties");
-			//»ñÈ¡ÊôĞÔÎÄ¼ş¶ÔÏó
+			//è·å–å±æ€§æ–‡ä»¶å¯¹è±¡
 			Properties pp=new Properties();
-			//¼ÓÔØÊôĞÔÎÄ¼ş
+			//åŠ è½½å±æ€§æ–‡ä»¶
 			pp.load(fis);
-			//¶ÁÈ¡ÊôĞÔÖµ
+			//è¯»å–å±æ€§å€¼
 			driver=pp.getProperty("DRIVER_NAME");
 			url=pp.getProperty("URL");
 			user=pp.getProperty("USER_NAME");
@@ -284,7 +284,7 @@ public class DButil {
 		}
 		return rs;
 	}
-	//²éÑ¯·ûºÏÌõ¼şµÄÑ§Éú
+	//æŸ¥è¯¢ç¬¦åˆæ¡ä»¶çš„å­¦ç”Ÿ
 	public static int add(String sql,String s1,String s2,String s3,String s4){
 			int i=0;
 		try {
@@ -330,7 +330,7 @@ public class DButil {
 		rs=psta.executeQuery();
 		return rs;
 	}
-	//Ê¹ÓÃprepareStatementÊµÏÖÔöÉ¾¸Ä²é
+	//ä½¿ç”¨prepareStatementå®ç°å¢åˆ æ”¹æŸ¥
 	public static ResultSet getSet1(String sql,String s){
 		try {
 			psta=con.prepareStatement(sql);
@@ -395,19 +395,19 @@ public class DButil {
 		try {
 			if(fis!=null){
 			fis.close();
-			System.out.println("fis¹Ø±Õ³É¹¦");
+			System.out.println("fiså…³é—­æˆåŠŸ");
 			}
 			if(rs!=null){
 				rs.close();
-				System.out.println("rs¹Ø±Õ³É¹¦");
+				System.out.println("rså…³é—­æˆåŠŸ");
 			}
 			if(sta!=null){
 				sta.close();
-				System.out.println("sta¹Ø±Õ³É¹¦");
+				System.out.println("staå…³é—­æˆåŠŸ");
 			}
 			if(con!=null){
 				con.close();
-				System.out.println("con¹Ø±Õ³É¹¦");
+				System.out.println("conå…³é—­æˆåŠŸ");
 			}
 			
 		} catch (SQLException e) {

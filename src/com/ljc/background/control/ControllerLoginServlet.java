@@ -86,7 +86,7 @@ public class ControllerLoginServlet extends HttpServlet {
 			session.setAttribute("controller", controller);
 			response.sendRedirect("houtaiHTML/index.html");
 		}else{
-			out.print("��¼ʧ��");
+			out.print("鐧诲綍澶辫触");
 		}
 	}
 

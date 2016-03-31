@@ -8,6 +8,6 @@ public interface ControllerServiceInt {
 	public boolean deleUser(String id);
 	public boolean UpdatUser(Controller controller);
 	public PageBean<Controller> query(Controller controller);
-	public int getAllCounts(Controller controller);//»ñÈ¡·ûºÏÌõ¼şµÄ¹ÜÀíÔ±µÄ×ÜÌõÊı
+	public int getAllCounts(Controller controller);//è·å–ç¬¦åˆæ¡ä»¶çš„ç®¡ç†å‘˜çš„æ€»æ¡æ•°
 	public Controller login(Controller controller);
 }

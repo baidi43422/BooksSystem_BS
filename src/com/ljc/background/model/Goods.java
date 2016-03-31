@@ -1,6 +1,6 @@
 package com.ljc.background.model;
 /**
- * 商品对象
+ * 鍟嗗搧瀵硅薄
  * @author scxh
  *
  */
@@ -9,12 +9,12 @@ public class Goods {
 	private String name;
 	private String type_id;
 	private double price;
-	private int amount;//数量
-	private String remark;//商品描述
-	private String small_pic;//商品小图
-	private String big_pic;//商品大图
-	private double price1;//查询使用
-	private String type_name;//查询时使用表示父类的名字
+	private int amount;//鏁伴噺
+	private String remark;//鍟嗗搧鎻忚堪
+	private String small_pic;//鍟嗗搧灏忓浘
+	private String big_pic;//鍟嗗搧澶у浘
+	private double price1;//鏌ヨ浣跨敤
+	private String type_name;//鏌ヨ鏃朵娇鐢ㄨ〃绀虹埗绫荤殑鍚嶅瓧
 	public Goods(String id, String name, String typeId, double price,
 			int amount, String remark, String smallPic, String bigPic) {
 		super();

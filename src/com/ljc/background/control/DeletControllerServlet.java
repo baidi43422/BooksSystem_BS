@@ -77,9 +77,9 @@ public class DeletControllerServlet extends HttpServlet {
 		ControllerServiceInt serviceInt=new ControllerServiceImpl();
 		boolean temp=serviceInt.deleUser(id);
 		if(temp){
-			System.out.println("É¾³ı³É¹¦£¡");
+			System.out.println("åˆ é™¤æˆåŠŸï¼");
 		}else{
-			System.out.println("É¾³ıÊ§°Ü£¡");
+			System.out.println("åˆ é™¤å¤±è´¥ï¼");
 		}
 	}
 

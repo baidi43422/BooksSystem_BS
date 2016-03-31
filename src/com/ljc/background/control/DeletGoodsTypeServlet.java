@@ -79,9 +79,9 @@ public class DeletGoodsTypeServlet extends HttpServlet {
 		GoodsTypeServiceIntf intf=new GoodsTypeServiceImpl();
 		boolean temp=intf.dele(goodsType);
 		if(temp){
-			System.out.println("É¾³ı³É¹¦£¡");
+			System.out.println("åˆ é™¤æˆåŠŸï¼");
 		}else{
-			System.out.println("É¾³ıÊ§°Ü£¡");
+			System.out.println("åˆ é™¤å¤±è´¥ï¼");
 		}
 	}
 

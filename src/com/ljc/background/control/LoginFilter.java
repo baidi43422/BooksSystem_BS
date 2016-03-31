@@ -26,10 +26,10 @@ public class LoginFilter implements Filter {
 			HttpServletRequest httpServletRequest=(HttpServletRequest)arg0;
 			Controller controller=(Controller)httpServletRequest.getSession().getAttribute("controller");
 			if(controller != null){
-				//如果登录了就请求继续
+				//濡傛灉鐧诲綍浜嗗氨璇锋眰缁х画
 				arg2.doFilter(arg0, arg1);
 			}else{
-				//如果没有登录就跳转到登录页面
+				//濡傛灉娌℃湁鐧诲綍灏辫烦杞埌鐧诲綍椤甸潰
 				//httpServletRequest.getRequestDispatcher("/login.html").forward(arg0, arg1);
 				HttpServletResponse httpServletResponse=(HttpServletResponse)arg1;
 				httpServletResponse.sendRedirect("../login.html");

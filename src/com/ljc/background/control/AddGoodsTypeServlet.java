@@ -80,9 +80,9 @@ public class AddGoodsTypeServlet extends HttpServlet {
 		GoodsTypeServiceIntf intf = new GoodsTypeServiceImpl();
 		boolean temp=intf.add(goodsType);
 		if(temp){
-			System.out.println("Ìí¼Ó³É¹¦£¡");
+			System.out.println("æ·»åŠ æˆåŠŸï¼");
 		}else{
-			System.out.println("Ìí¼ÓÊ§°Ü£¡");
+			System.out.println("æ·»åŠ å¤±è´¥ï¼");
 		}
 	}
 

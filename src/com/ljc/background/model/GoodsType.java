@@ -1,13 +1,13 @@
 package com.ljc.background.model;
 /**
- * 商品类型对象
+ * 鍟嗗搧绫诲瀷瀵硅薄
  * @author scxh
  *
  */
 public class GoodsType {
 	private String id;
 	private String name;
-	private String p_id;//父类id
+	private String p_id;//鐖剁被id
 	
 	public GoodsType(String id, String name, String p_id) {
 		super();

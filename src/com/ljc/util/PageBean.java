@@ -2,13 +2,13 @@ package com.ljc.util;
 
 import java.util.List;
 
-//·ÖÒ³Àà
+//åˆ†é¡µç±»
 public class PageBean<T> {
-	private int count;//×ÜÌõÊı
-	private int currentPage=1;//µ±Ç°Ò³Êı
-	private int countOfPage=2;//Ò»Ò³µÄÌõÊı
-	private int allPages;//×ÜÒ³Êı
-	private List<T> data;//µ±Ç°Ò³µÄÊı¾İ
+	private int count;//æ€»æ¡æ•°
+	private int currentPage=1;//å½“å‰é¡µæ•°
+	private int countOfPage=2;//ä¸€é¡µçš„æ¡æ•°
+	private int allPages;//æ€»é¡µæ•°
+	private List<T> data;//å½“å‰é¡µçš„æ•°æ®
 	public  PageBean(int count){
 		this.count=count;
 		if(count%countOfPage==0){

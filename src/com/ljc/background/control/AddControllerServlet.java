@@ -81,9 +81,9 @@ public class AddControllerServlet extends HttpServlet {
 		ControllerServiceInt serviceInt = new ControllerServiceImpl();
 		boolean temp=serviceInt.addUser(controller);
 		if(temp){
-			out.print("Ìí¼Ó³É¹¦");
+			out.print("æ·»åŠ æˆåŠŸ");
 		}else{
-			out.print("Ìí¼ÓÊ§°Ü");
+			out.print("æ·»åŠ å¤±è´¥");
 		}
 			
 	}

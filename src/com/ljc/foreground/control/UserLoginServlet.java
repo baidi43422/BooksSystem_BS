@@ -82,9 +82,9 @@ public class UserLoginServlet extends HttpServlet {
 		UserServiceIntf serviceIntf=new UserServiceImpl();
 		user=serviceIntf.login(user);
 		if(user.getStatus()!=null && "yes".equals(user.getStatus())){
-			System.out.println("µÇÂ¼³É¹¦");
+			System.out.println("ç™»å½•æˆåŠŸ");
 		}else{
-			System.out.println("µÇÂ¼Ê§°Ü");
+			System.out.println("ç™»å½•å¤±è´¥");
 		}
 	}
 

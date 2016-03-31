@@ -1,6 +1,6 @@
 package com.ljc.foreground.model;
 /**
- * ע���û����󣨺�̨����Ա�鿴��
+ * 注册用户对象（后台管理员查看）
  * @author scxh
  *
  */

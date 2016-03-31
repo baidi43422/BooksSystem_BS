@@ -4,7 +4,7 @@ import com.ljc.foreground.model.User;
 import com.ljc.util.PageBean;
 
 public interface UserServiceIntf {
-	public boolean register(User user);//×¢²á
+	public boolean register(User user);//æ³¨å†Œ
 	public User login(User user);
 	public PageBean<User> query(PageBean<User> pageBean,User user);
 	public int getCount(User user);

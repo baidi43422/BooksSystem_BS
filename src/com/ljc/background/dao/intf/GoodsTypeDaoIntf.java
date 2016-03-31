@@ -9,7 +9,7 @@ public interface GoodsTypeDaoIntf {
 	public boolean addGoodsType(GoodsType goodsType);
 	public boolean updateGoodsType(GoodsType goodsType);
 	public boolean deletdGoodsType(GoodsType goodsType);
-	//Ôİ²»ÊµÏÖ
+	//æš‚ä¸å®ç°
 	public PageBean<GoodsType> query(PageBean<GoodsType> pageBean,GoodsType type);
 	public List<GoodsType> getAllType();
 }

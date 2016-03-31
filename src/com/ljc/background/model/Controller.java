@@ -1,6 +1,6 @@
 package com.ljc.background.model;
 /**
- * ºóÌ¨¹ÜÀíÔ±¶ÔÏó
+ * åå°ç®¡ç†å‘˜å¯¹è±¡
  * @author ljc
  *
  */
@@ -8,7 +8,7 @@ public class Controller {
 	private String id;
 	private String name;
 	private String pwd;
-	private String status;//ÊÇ·ñ¿ÉÒÔµÇÂ¼
+	private String status;//æ˜¯å¦å¯ä»¥ç™»å½•
 	
 	public Controller(String id, String name, String pwd) {
 		this.id = id;

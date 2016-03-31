@@ -80,9 +80,9 @@ public class UpdateGoodsTypeServlet extends HttpServlet {
 		GoodsTypeServiceIntf intf=new GoodsTypeServiceImpl();
 		boolean temp=intf.update(goodsType);
 		if(temp){
-			System.out.println("¸üĞÂ³É¹¦£¡");
+			System.out.println("æ›´æ–°æˆåŠŸï¼");
 		}else{
-			System.out.println("¸üĞÂÊ§°Ü£¡");
+			System.out.println("æ›´æ–°å¤±è´¥ï¼");
 		}
 	}
 
