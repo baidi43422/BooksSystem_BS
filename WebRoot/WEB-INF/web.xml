@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddControllerServlet</servlet-name>
+    <servlet-class>com.ljc.background.control.AddControllerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeletControllerServlet</servlet-name>
+    <servlet-class>com.ljc.background.control.DeletControllerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ControllerLoginServlet</servlet-name>
+    <servlet-class>com.ljc.background.control.ControllerLoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddUserServelet</servlet-name>
+    <servlet-class>com.ljc.foreground.control.AddUserServelet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserLoginServlet</servlet-name>
+    <servlet-class>com.ljc.foreground.control.UserLoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddGoodsTypeServlet</servlet-name>
+    <servlet-class>com.ljc.background.control.AddGoodsTypeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeletGoodsTypeServlet</servlet-name>
+    <servlet-class>com.ljc.background.control.DeletGoodsTypeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateGoodsTypeServlet</servlet-name>
+    <servlet-class>com.ljc.background.control.UpdateGoodsTypeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddGoodsServlet</servlet-name>
+    <servlet-class>com.ljc.background.control.AddGoodsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeletGoodsServlet</servlet-name>
+    <servlet-class>com.ljc.background.control.DeletGoodsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateGoodsServlet</servlet-name>
+    <servlet-class>com.ljc.background.control.UpdateGoodsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>QueryGoodsServlet</servlet-name>
+    <servlet-class>com.ljc.background.control.QueryGoodsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>QueryUserServelt</servlet-name>
+    <servlet-class>com.ljc.foreground.control.QueryUserServelt</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetGoodsTypeServlet</servlet-name>
+    <servlet-class>com.ljc.foreground.control.GetGoodsTypeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetGoodsServlet</servlet-name>
+    <servlet-class>com.ljc.foreground.control.GetGoodsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddOrderServlet</servlet-name>
+    <servlet-class>com.ljc.foreground.control.AddOrderServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>AddControllerServlet</servlet-name>
+    <url-pattern>/houtaiHTML/AddControllerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeletControllerServlet</servlet-name>
+    <url-pattern>/DeletControllerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ControllerLoginServlet</servlet-name>
+    <url-pattern>/ControllerLoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddUserServelet</servlet-name>
+    <url-pattern>/AddUserServelet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserLoginServlet</servlet-name>
+    <url-pattern>/UserLoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddGoodsTypeServlet</servlet-name>
+    <url-pattern>/AddGoodsTypeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeletGoodsTypeServlet</servlet-name>
+    <url-pattern>/DeletGoodsTypeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateGoodsTypeServlet</servlet-name>
+    <url-pattern>/UpdateGoodsTypeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddGoodsServlet</servlet-name>
+    <url-pattern>/AddGoodsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeletGoodsServlet</servlet-name>
+    <url-pattern>/DeletGoodsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateGoodsServlet</servlet-name>
+    <url-pattern>/UpdateGoodsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>QueryGoodsServlet</servlet-name>
+    <url-pattern>/QueryGoodsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>QueryUserServelt</servlet-name>
+    <url-pattern>/QueryUserServelt</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetGoodsTypeServlet</servlet-name>
+    <url-pattern>/GetGoodsTypeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetGoodsServlet</servlet-name>
+    <url-pattern>/GetGoodsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddOrderServlet</servlet-name>
+    <url-pattern>/AddOrderServlet</url-pattern>
+  </servlet-mapping>
+  
+  <filter> 
+		<filter-name>loginFilter</filter-name>
+		<filter-class>com.ljc.background.control.LoginFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>loginFilter</filter-name>
+		<url-pattern>/houtaiHTML/*</url-pattern>
+	</filter-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

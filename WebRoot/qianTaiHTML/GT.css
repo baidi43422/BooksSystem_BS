@@ -1,0 +1,42 @@
+.main,.footer{
+	width:990px;
+	margin:auto;
+	font-family: "宋体";
+	font-size:12px;
+	line-height:20px;
+	}
+.txt01,.txt01 a{
+	color:#3c3c3c;
+	text-decoration:none;
+	}
+.txt02{
+	color:#ff4400;
+	font-weight:bold;
+	}
+.txt03,.txt03 a{
+	color:#6c6c6c;
+	text-decoration:none;
+	}
+.txt04,.txt04 a{
+	color:#9c9c9c;
+	text-decoration:none;
+	}
+.txt05{
+	font-size:15px;
+	color:#404040;
+	font-weight:bold;
+	}
+.txt06,.txt06 a{
+	color:#3366cc;
+	text-decoration:none;}
+.txt07{
+	color:#808080;
+	font-size:15px;
+	font-weight:bold;
+	}
+.txt08{
+	color:#404040;
+	}
+.txt09{
+	color:#808080;
+	}

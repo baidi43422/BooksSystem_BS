@@ -1,0 +1,93 @@
+body{
+	margin:0px;
+	font-size:16px;
+	color:#333;
+	font-family: "宋体"；
+	}
+.header{
+	height:12px;
+	background-image:url(images/zhuceye_02.gif);
+	background-repeat:repeat-x;
+	margin:auto;
+	padding-bottom:11px;
+	padding-top:13px;
+	}
+#nav{
+	height:12px;
+	width:1190px;
+	margin:auto;
+	}
+.main,.footer{
+	width:1190px;
+	margin:auto;
+	}
+#main01,#main02,#main03,#main04{
+	height:131px;
+	float:left;
+	}
+#main01{
+	width:235px;
+	height:79px;
+	border-bottom:2px solid #e6e6e6;
+	padding-bottom:52px;
+	}
+#main02,#main03,#main04{
+	width:108px;
+	height:26px;
+	border-bottom:2px solid #ff4700;
+	padding:95px 62px 10px 70px;
+	}
+#main03,#main04,#main05{
+	border-bottom-color:#e6e6e6;
+	}
+#main05{
+	height:131px;
+	border-bottom:2px solid #e6e6e6;
+	}
+#main06{
+	margin-top:74px;
+	height:25px;
+	padding-left:203px;
+	}
+#main07,#main08{
+	margin-top:30px;
+	height:25px;
+	padding-left:219px;
+	}
+#main08{
+	padding-left:187px;
+	}
+#main09{
+	margin-top:50px;
+	padding-left:265px;
+	height:22px;
+	font-size:12px;
+	}
+#main09 a,#main11 a{
+	text-decoration:none;
+	color:#ff5b20;
+	}
+#main10{
+	padding:20px 270px 0px 270px;
+	height:36px;
+	}
+#main11{
+	margin-top:25px;
+	padding-left:270px;
+	height:12px;
+	font-size:12px;
+	margin-bottom:100px;
+	}
+.footer{
+	height:104px;
+	}
+.txt01,.txt02,.txt01 a{
+	width:588px;
+	font-size:12px;
+	margin:10px 0px 10px 0px;
+	color:#6c6c6c;
+	text-decoration:none;
+	}
+.txt02{
+	color:#9c9c9c;
+	}
